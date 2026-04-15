@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 1cm;
+    text-align: center;
+    box-shadow: 4px 4px 10px gray;
+    border-radius: 15px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    box-shadow: 4px 4px 10px gray;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1#studentInfo {
+    text-align: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#studentinfo {
+    position: absolute;
+    bottom: 20px;
+
+}
+
+label {
+    display: block;
+    text-align: center;
+}
