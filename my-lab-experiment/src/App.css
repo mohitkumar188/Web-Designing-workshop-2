@@ -1,0 +1,42 @@
+.counter-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-display {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.button-group .btn {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.increment {
+  background-color: #28a745;
+}
+
+.decrement {
+  background-color: #dc3545;
+}
+
+.reset {
+  background-color: #007bff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
