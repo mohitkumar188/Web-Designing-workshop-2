@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and Odd Number Checker</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Even and Odd Number Checker</h2>
+
+        <input type="number" id="number" placeholder="Enter a number">
+
+        <br>
+
+        <button onclick="checkNumber()">Check</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkNumber() {
+            let num = document.getElementById("number").value;
+            let result = document.getElementById("result");
+
+            if (num === "") {
+                result.innerHTML = "Please enter a number.";
+            } else {
+                num = parseInt(num);
+
+                if (num % 2 === 0) {
+                    result.innerHTML = num + " is an Even number.";
+                } else {
+                    result.innerHTML = num + " is an Odd number.";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
